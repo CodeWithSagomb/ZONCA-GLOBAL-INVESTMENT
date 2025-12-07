@@ -1,0 +1,15 @@
+# Zonca Global Investment Ltd - Robots.txt
+# Allow all search engines to index the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://zoncaglobal.com/sitemap.xml
+
+# Crawl delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+# Disallow specific paths if needed in the future
+# Disallow: /admin/
+# Disallow: /private/
