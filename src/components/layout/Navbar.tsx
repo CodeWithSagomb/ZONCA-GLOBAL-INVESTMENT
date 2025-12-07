@@ -34,19 +34,23 @@ export const Navbar: React.FC<NavbarProps> = ({ view, setView }) => {
               <button
                 key={item.id}
                 onClick={() => setView(item.id)}
-                className={`text-sm font-bold uppercase tracking-wide transition-colors ${
+                className={`relative text-sm font-bold uppercase tracking-wide transition-colors group ${
                   view === item.id ? 'text-zonca-red' : 'text-slate-600 hover:text-zonca-red'
                 }`}
               >
                 {item.label}
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-zonca-red transition-all duration-300 ${
+                  view === item.id ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}></span>
               </button>
             ))}
             <div className="h-6 w-px bg-gray-300 mx-2"></div>
             <button
               onClick={() => setView('contact')}
-              className="bg-zonca-red text-white px-6 py-2.5 text-sm font-bold uppercase tracking-wider hover:bg-red-800 transition-colors shadow-lg shadow-red-900/20"
+              className="group relative bg-zonca-red text-white px-6 py-2.5 text-sm font-bold uppercase tracking-wider overflow-hidden shadow-lg shadow-red-900/20 transition-all duration-300 hover:shadow-xl hover:shadow-red-900/30 hover:scale-105"
             >
-              Request Quote
+              <span className="relative z-10">Request Quote</span>
+              <div className="absolute inset-0 bg-red-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </button>
           </div>
 

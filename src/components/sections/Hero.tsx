@@ -1,18 +1,24 @@
 import React from 'react';
 import { ChevronRight, ChevronDown, Award } from 'lucide-react';
 import { ViewType } from '../../types';
+import { useParallax } from '../../hooks/useParallax';
 
 interface HeroProps {
   setView: (view: ViewType) => void;
 }
 
 export const Hero: React.FC<HeroProps> = ({ setView }) => {
+  const parallaxOffset = useParallax({ speed: 0.5, direction: 'down' });
+
   return (
-    <div className="relative h-[650px] bg-slate-900 flex items-center">
-      {/* Background */}
+    <div className="relative h-[650px] bg-slate-900 flex items-center overflow-hidden">
+      {/* Background with parallax effect */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600")' }}
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-100 ease-out"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600")',
+          transform: `translateY(${parallaxOffset}px)`,
+        }}
       >
         <div className="absolute inset-0 bg-slate-900/70"></div>
         {/* Subtle Grid Overlay for "Engineering" feel */}
@@ -34,15 +40,18 @@ export const Hero: React.FC<HeroProps> = ({ setView }) => {
           <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={() => setView('catalog')}
-              className="px-8 py-4 bg-white text-slate-900 font-bold uppercase tracking-wider hover:bg-gray-100 transition-colors"
+              className="group relative px-8 py-4 bg-white text-slate-900 font-bold uppercase tracking-wider overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
-              View Our Products
+              <span className="relative z-10 group-hover:text-white transition-colors duration-300">View Our Products</span>
+              <div className="absolute inset-0 bg-zonca-red transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </button>
             <button
               onClick={() => setView('contact')}
-              className="px-8 py-4 border-2 border-white text-white font-bold uppercase tracking-wider hover:bg-white/10 transition-colors flex items-center justify-center"
+              className="group relative px-8 py-4 border-2 border-white text-white font-bold uppercase tracking-wider overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105 flex items-center justify-center"
             >
-              Start a Project <ChevronRight className="ml-2" size={18}/>
+              <span className="relative z-10">Start a Project</span>
+              <ChevronRight className="ml-2 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300" size={18}/>
+              <div className="absolute inset-0 bg-white/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </button>
           </div>
         </div>

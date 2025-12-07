@@ -1,4 +1,4 @@
-# 🏢 Zonca Global Investment Ltd - Corporate Website
+# Zonca Global Investment Ltd - Corporate Website
 
 > Professional corporate website for Zonca Global Investment Ltd, a leading provider of high-performance aluminium extrusion, facades, curtain walls, and architectural systems in West Africa.
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [About](#about)
 - [Features](#features)
@@ -25,7 +25,7 @@
 
 ---
 
-## 🎯 About
+## About
 
 **Zonca Global Investment Ltd** is a premier aluminium manufacturing and architectural systems company based in Lagos, Nigeria. This repository contains the official corporate website built with modern web technologies.
 
@@ -39,18 +39,18 @@
 
 ---
 
-## ✨ Features
+## Features
 
 ### Core Functionality
 
-- 🎨 **Modern Design** - Clean, professional corporate website
-- 📱 **Fully Responsive** - Mobile-first design, works on all devices
-- ⚡ **High Performance** - 100 KB gzipped bundle, optimized for speed
-- 🔍 **SEO Optimized** - Meta tags, structured data, sitemap
-- 📊 **Analytics Ready** - Google Analytics 4 integration
-- 📧 **Contact Form** - Functional contact form with EmailJS
-- 💬 **WhatsApp Integration** - Direct messaging capability
-- 🖼️ **Image Optimization** - WebP format with fallbacks
+- **Modern Design** - Clean, professional corporate website
+- **Fully Responsive** - Mobile-first design, works on all devices
+- **High Performance** - 100 KB gzipped bundle, optimized for speed
+- **SEO Optimized** - Meta tags, structured data, sitemap
+- **Analytics Ready** - Google Analytics 4 integration
+- **Contact Form** - Functional contact form with EmailJS
+- **WhatsApp Integration** - Direct messaging capability
+- **Image Optimization** - WebP format with fallbacks
 
 ### Pages
 
@@ -70,7 +70,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Core
 
@@ -96,7 +96,7 @@
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -141,7 +141,7 @@ npm run optimize-images  # Optimize images
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 zonca-global-investment/
@@ -185,7 +185,7 @@ zonca-global-investment/
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 This project is optimized for deployment on **Vercel**.
 
@@ -205,13 +205,13 @@ git push origin main
    - Go to [vercel.com](https://vercel.com)
    - Import your GitHub repository
    - Configure environment variables
-   - Deploy!
+   - Deploy
 
 For detailed deployment instructions, see [DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
 Create a `.env.local` file in the root directory:
 
@@ -242,7 +242,7 @@ See `.env.example` for template.
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 Comprehensive documentation is available:
 
@@ -255,7 +255,7 @@ Comprehensive documentation is available:
 
 ---
 
-## 🎨 Image Optimization
+## Image Optimization
 
 ### Optimize New Images
 
@@ -278,12 +278,12 @@ See [IMAGE-SPECIFICATIONS.md](IMAGE-SPECIFICATIONS.md) for details.
 
 ---
 
-## 📊 Performance
+## Performance
 
 ### Bundle Size
 
-- **JavaScript**: 308 KB (94.8 KB gzipped) ⚡
-- **CSS**: 27.2 KB (5.28 KB gzipped) ⚡
+- **JavaScript**: 308 KB (94.8 KB gzipped)
+- **CSS**: 27.2 KB (5.28 KB gzipped)
 - **Total**: ~100 KB gzipped
 
 ### Lighthouse Score Goals
@@ -295,9 +295,9 @@ See [IMAGE-SPECIFICATIONS.md](IMAGE-SPECIFICATIONS.md) for details.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome! Please follow these steps:
+Contributions are welcome. Please follow these steps:
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
@@ -307,13 +307,13 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📞 Contact
+## Contact
 
 **Zonca Global Investment Ltd**
 
@@ -327,7 +327,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [React](https://reactjs.org/)
 - Powered by [Vite](https://vitejs.dev/)
@@ -337,12 +337,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📈 Status
+## Status
 
-- ✅ **Build**: Passing
-- ✅ **Tests**: N/A
-- ✅ **Deployment**: Ready
-- ✅ **Performance**: Optimized
+- Build: Passing
+- Tests: N/A
+- Deployment: Ready
+- Performance: Optimized
 
 **Current Version**: 1.0.0
 **Last Updated**: December 2025
@@ -351,8 +351,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Made with ❤️ in Nigeria**
-
-⭐ Star this repo if you find it useful!
+**Zonca Global Investment Ltd - Professional Aluminium Solutions**
 
 </div>

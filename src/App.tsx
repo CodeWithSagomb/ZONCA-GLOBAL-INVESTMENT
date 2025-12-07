@@ -6,6 +6,7 @@ import { Footer } from './components/layout/Footer';
 import { WhatsAppButton } from './components/common/WhatsAppButton';
 import { GoogleAnalytics, trackPageView } from './components/common/GoogleAnalytics';
 import { OrganizationSchema, LocalBusinessSchema } from './components/common/StructuredData';
+import { PageTransition } from './components/common/PageTransition';
 import { HomePage } from './pages/HomePage';
 import { CatalogPage } from './pages/CatalogPage';
 import { ServicesPage } from './pages/ServicesPage';
@@ -40,15 +41,17 @@ const App: React.FC = () => {
         <Navbar view={view} setView={setView} />
 
       <main className="flex-grow">
-        {view === 'home' && <HomePage setView={setView} setProduct={setSelectedProduct} />}
-        {view === 'catalog' && <CatalogPage setProduct={setSelectedProduct} setView={setView} />}
-        {view === 'services' && <ServicesPage />}
-        {view === 'projects' && <ProjectsPage />}
-        {view === 'contact' && <ContactPage />}
-        {view === 'founder' && <FounderPage setView={setView} />}
-        {view === 'product-detail' && selectedProduct && (
-          <ProductDetail product={selectedProduct} setView={setView} />
-        )}
+        <PageTransition pageKey={view + (selectedProduct?.id || '')}>
+          {view === 'home' && <HomePage setView={setView} setProduct={setSelectedProduct} />}
+          {view === 'catalog' && <CatalogPage setProduct={setSelectedProduct} setView={setView} />}
+          {view === 'services' && <ServicesPage />}
+          {view === 'projects' && <ProjectsPage />}
+          {view === 'contact' && <ContactPage />}
+          {view === 'founder' && <FounderPage setView={setView} />}
+          {view === 'product-detail' && selectedProduct && (
+            <ProductDetail product={selectedProduct} setView={setView} />
+          )}
+        </PageTransition>
       </main>
 
         <Footer setView={setView} />
